@@ -11,8 +11,8 @@ This format is designed to present NFRs _at a glance_
 Those requiring more details in their NFRs should choose a different format.
 
 ## References
-[Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )
-[Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
+* [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )
+* [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
 ## Various NFR Category Taxonomies
 NFRs are often grouped with related NFRs into _Categories_.  There are many different published NFR categories and Category Type aggeregationsrs.  The links below show some Categories that are grouped under described Category Types
