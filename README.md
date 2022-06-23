@@ -1,6 +1,6 @@
 Notes:
-1. This repository is also visible as https://freemansoft.github.io/NFRs/
-1. You can see a wider version by navigating to the source page https://github.com/freemansoft/NFRs/blob/main/README.md
+1. This repository is also visible as [NFR Github.io](https://freemansoft.github.io/NFRs/)
+2. You can see a wider version by navigating to the source page [GitHub README.md](https://github.com/freemansoft/NFRs/blob/main/README.md)
 
 # NFRs
 Non Functional Requirements are architecturally significant requrements because they impact the system architecture.  Non functional requirements impact the system as a whole and are cross cutting across business features.
