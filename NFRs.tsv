@@ -31,8 +31,8 @@
  Compliance	Traceablilty 	"Design time: Schema changes must be tracked, lineage captured"	 Schema versions are registered in a schema catalog	Deployment tools can verify registration 
  Compliance	Traceability 	"Design time: Data mutation operations must be tracked, lineage captured, regulated ML"	 Transforms are registered in schema catalog	Tests can verify deployed transforms are registered 
  Compliance	Traceability 	"Run time: Data origins are tracked, lineage captured"	 Tag data sets or records with lineage information	tbd 
- Compliance	Privacy 	"Support 'Opt Out'"	 Ivoke opt-out service before contacting	Functional Test automation with opt-in and opt-out 
- Compliance	Privacy 	"Support 'Where is my data'"	 Use data lineage to find a person's data	Automated Functional tests with test data 
+ Compliance	Privacy 	Support 'Opt Out'	 Ivoke opt-out service before contacting	Functional Test automation with opt-in and opt-out 
+ Compliance	Privacy 	Support 'Where is my data'	 Use data lineage to find a person's data	Automated Functional tests with test data 
  Maintainability	Agility	API compatability	Either version APIs or always support backwards compatability in APIs	Automated functional tests for old and new capabilities 
  Maintainability	Agility	Deploy Early - Enable in Prod	Implement Feature Flags to turn on when ready	Functional Test automation 
  Maintainability	Scalability	Test at scale	Implement load tests	Automated tests 
@@ -49,4 +49,3 @@
  Maintainability	Testability	All endpoints are verified at deployment	Implement functional tests for all endpoints and run on deployment	Automated functional testing 
  Interoperability 	CharacterSet	 Components must support approved name formats	All components must support UTF-8 encoding	Automated Functinal Tests with different characters 
  Interoperability	Time	All dates times must not assume timezones	All dates and times will support timzone info 	Automated functional Tests on all endpoints
-				
