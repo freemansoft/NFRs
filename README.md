@@ -1,4 +1,4 @@
-View captured NFRs [NFRs.tsv](NFRs.tsv)  </br>
+NFRs have been captured in [NFRs.tsv](NFRs.tsv)  </br>
 They are stored in _Tab Separated_ format _.tsv_ which is previewable on github
 
 # NFRs
