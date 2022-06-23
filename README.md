@@ -1,14 +1,17 @@
 # NFRs
+
 Non Functional Requirements are architecturally significant requrements because they impact the system architecture.  Non functional requirements impact the system as a whole and are cross cutting across business features.
 
 ------------------
 
 # NFR Definitions
+
 This document describes one way of describing NFRs. 
 This format is designed to present NFRs _at a glance_
 Those requiring more details in their NFRs should choose a different format.
 
 ## References
+
 [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )
 [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
