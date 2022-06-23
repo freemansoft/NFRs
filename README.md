@@ -1,4 +1,4 @@
-NFRs have been captured in [NFRs.tsv](NFRs.tsv)  </br>
+NFRs have been captured in tab delimited format [NFRs.tsv](NFRs.tsv)  </br>
 They are stored in _Tab Separated_ format _.tsv_ which is previewable on github
 
 # NFRs
@@ -7,7 +7,7 @@ Non Functional Requirements are architecturally significant requrements because 
 ------------------
 
 # NFR Definitions
-This document describes one way of describing NFRs. 
+This document describes one way of specifying NFRs for consumption by delivery teams. 
 This format is designed to present NFRs _at a glance_
 Those requiring more details in their NFRs should choose a different format.
 
@@ -46,16 +46,25 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
 ------------------
 
 # Example NFRs
-You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository.
+You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
+Open NFRs.tsv with a CSV/TSV viewer. 
 
-Open NFRs.tsv with a CSV/TSV viewer. [NFRs.tsv](NFRs.tsv)
+[NFRs.tsv](NFRs.tsv)
 
-## Editing TSV files with Visual Code
+## Edit TSV with Excel
+This just works
+## Edit TSV files with Visual Code
 I use the VSCode Extension _Excel Viewer_ by _GrapeCity_.
 1. Select `NFRs.tsv`
 2. Right mouse
 3. Select `Open With ...`
 4. Enter `CSV`
 5. Select `CSV Editor`
+
+## View formatted TSV files in Visual Code
+I use the VSCode Extension _Excel Viewer_ by _GrapeCity_.
+1. Select `NFRs.tsv`
+2. Right mouse
+3. Select `Open Preview`
 
 
