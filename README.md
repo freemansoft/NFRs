@@ -33,7 +33,6 @@ I couldn't find many Sub-Category examples so there ones in the sample below are
 | Category                              | Sub-Category                      | Requirement Definition     | Possible Implementation (opt)                         | Validation Method                       |
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
 | Top Level Categories from a Taxonomy. | One or two word requirements name | Describing the requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
-|                                       |                                   |                            |                                                       |                                         |
 
 ## Scaled Agile Framework Aligned (SAFe) Template
 See the SAFe web site for the meanings of these fields. https://www.scaledagileframework.com/nonfunctional-requirements/
