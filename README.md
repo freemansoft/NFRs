@@ -1,6 +1,5 @@
-Notes:
-1. This repository is also visible as [NFR Github.io](https://freemansoft.github.io/NFRs/)
-2. You can see a wider version by navigating to the source page [GitHub README.md](https://github.com/freemansoft/NFRs/blob/main/README.md)
+View captured NFRs [NFRs.tsv](NFRs.tsv)  </br>
+They are stored in _Tab Separated_ format _.tsv_ which is previewable on github
 
 # NFRs
 Non Functional Requirements are architecturally significant requrements because they impact the system architecture.  Non functional requirements impact the system as a whole and are cross cutting across business features.
@@ -46,10 +45,12 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
   
 ------------------
 
-# NFRs using the Generic Template
+# Example NFRs
 You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository.
 
 Open NFRs.tsv with a CSV/TSV viewer. [NFRs.tsv](NFRs.tsv)
+
+## Editing TSV files with Visual Code
 I use the VSCode Extension _Excel Viewer_ by _GrapeCity_.
 1. Select `NFRs.tsv`
 2. Right mouse
