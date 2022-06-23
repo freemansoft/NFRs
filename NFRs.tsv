@@ -47,5 +47,5 @@
  Maintainability	Traceability	Support runtime version information for deployed binaries and infrastructure	Add metadata information or tagging to the deployment	Automated Functional Testing 
  Maintainability	Testability	All components must have automated tests	Unit tests for all components	Run test metrics 
  Maintainability	Testability	All endpoints are verified at deployment	Implement functional tests for all endpoints and run on deployment	Automated functional testing 
- Interoperability 	Format	 Components must support approved name formats	All components must support UTF-8 encoding	Automated Functinal Tests with different characters 
+ Interoperability 	Format	 Components must support approved text formats	All components must support UTF-8 encoding	Automated Functinal Tests with different characters 
  Interoperability	Format	Dates and times must not assume timezones	All dates and times will support timzone info 	Automated functional Tests on all endpoints
