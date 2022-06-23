@@ -14,6 +14,7 @@ Those requiring more details in their NFRs should choose a different format.
 
 ## Various NFR Category Taxonomies
 NFRs are often grouped with related NFRs into _Categories_.  There are many different published NFR categories and Category Type aggeregationsrs.  The links below show some Categories that are grouped under described Category Types
+
 | Site                                                                                                         | Category Type | Individual Category                                                                                                         |
 | ------------------------------------------------------------------------------------------------------------ | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )                                       | Execution     | safety, security and usability                                                                                              |
@@ -25,10 +26,12 @@ NFRs are often grouped with related NFRs into _Categories_.  There are many diff
 
 I couldn't find many Sub-Category examples so there ones in the sample below are ad-hoc following no model.
 ## Generic NFR Attributes Template
+
 | Category                              | Sub-Category                      | Requirement Definition     | Possible Implementation (opt)                         | Validation Method                       |
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
 | Top Level Categories from a Taxonomy. | One or two word requirements name | Describing the requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
 |                                       |                                   |                            |                                                       |                                         |
+
 ## Scaled Agile Framework Aligned (SAFe) Template
 See the SAFe web site for the meanings of these fields. https://www.scaledagileframework.com/nonfunctional-requirements/
 * Labels in *(parenthesis)* are Scaled Agile Framework aligned.
