@@ -48,6 +48,7 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
 This table captures a set of NFRs using the generic template.  These NFRs are owned by delvery teams in _Shift Left_ Models. It does not include any operational concerns.
 
 ### Security
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Security         | Encryption in Transit    | All data must be encrypted when moving from one system to another                     | Use TLS transport                                                             | Automated tests that verifies HTTP is not usable and that https is usable                   |
@@ -65,6 +66,7 @@ This table captures a set of NFRs using the generic template.  These NFRs are ow
 | Security         | Identity Management      | Use identities that don't require secret storage and manipulation                     | Use Cloud asset bound identities instead of service accounts                  | Audit                                                                                       |
 
 ### Availability
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Availability     | Analysis                 | Teams must conduct a failure mode analysis (FMA) whenever components are added        | Manual Analysis                                                               | FMA review                                                                                  |
@@ -75,6 +77,7 @@ This table captures a set of NFRs using the generic template.  These NFRs are ow
 | Availability     | Resilience               | All data services must meet RTO/RPO                                                   | Redundent copies in multiple data centers with failover                       | Chaos testing                                                                               |
 
 ### Visibility
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Visability       | Observability            | Logging - All logs are parameterized and are sent to log aggregator                   | Send structured (JSON) logs to Splunk                                         | Log aggregator dashboard                                                                    |
@@ -87,11 +90,13 @@ This table captures a set of NFRs using the generic template.  These NFRs are ow
 | Visibility       | KPI                      | Create Technical Key Performance Indicator (KPI) dashboard                            | Create SLAs and leverage metrics and dashboard                                | Metrics dashboard                                                                           |
 
 ### Scalability
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Scalability      | Auto-Scale               | Size compute to load to save costs                                                    | Autoscale compute resources                                                   | Performance metrics                                                                         |
 
 ### Compliance
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Compliance       | Traceablilty             | Design time: Schema changes must be tracked, lineage captured                         | Schema versions are registered in a schema catalog                            | Deployment tools can verify registration                                                    |
@@ -101,6 +106,7 @@ This table captures a set of NFRs using the generic template.  These NFRs are ow
 | Compliance       | Privacy                  | Support "Where is my data"                                                            | Use data lineage to find a person's data                                      | Automated Functional tests with test data                                                   |
 
 ### Maintainability
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Maintainability  | Agility                  | API compatability                                                                     | Either version APIs or always support backwards compatability in APIs         | Automated functional tests for old and new capabilities                                     |
@@ -119,6 +125,7 @@ This table captures a set of NFRs using the generic template.  These NFRs are ow
 | Maintainability  | Testability              | All endpoints are verified at deployment                                              | Implement functional tests for all endpoints and run on deployment            | Automated functional testing                                                                |
 
 ### Interoperability
+
 | Category         | Sub-Category             | Requirement Definition                                                                | Possible Implementation (opt)                                                 | Validation Method                                                                           |
 | ---------------- | ------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Interoperability | Language                 | Components must support approved name formats                                         | All components must support UTF-8 encoding                                    | Automated Functinal Tests with different characters                                         |
