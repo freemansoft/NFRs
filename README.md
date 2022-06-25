@@ -1,6 +1,3 @@
-NFRs have been captured in tab delimited format [NFRs.tsv](NFRs.tsv)  </br>
-They are stored in _Tab Separated_ format _.tsv_ which is previewable on github
-
 # NFRs
 Non Functional Requirements are architecturally significant requrements because they impact the system architecture.  Non functional requirements impact the system as a whole and are cross cutting across business features.
 
@@ -45,11 +42,12 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
   
 ------------------
 
-# Example NFRs
-You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
-Open NFRs.tsv with a CSV/TSV viewer. 
+# Current NFR list
+NFRs have been captured in tab delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
+They are stored in _Tab Separated_ format _.tsv_ which is previewable on github. Open NFRs.tsv with a CSV/TSV viewer. 
 
-[NFRs.tsv](NFRs.tsv)
+You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
+> [NFRs.tsv](NFRs.tsv)
 
 ## Edit TSV with Excel
 This just works
