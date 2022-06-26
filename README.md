@@ -16,7 +16,7 @@ This document describes one way of organizing NFRs for consumption by delivery t
 * [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
 ## Various NFR Category Taxonomies
-NFRs taxonomies often group related NFRs into _Categories_ or _Qualities_. Some of the taxonomies have additional _Sub Categories_. There are many different published NFR categories and sub-categores.  The folloing table links to a few.
+NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. There are many different published NFR taxonomies.  The folloing table links to a few.
 
 | Site                                                                                                                        | Category Type | Individual Category                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
