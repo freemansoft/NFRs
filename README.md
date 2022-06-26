@@ -6,6 +6,30 @@ NFRs are requirements that do not related to business functionality.  The relate
 
 Capturing NFRs early is part of a _shift left_ where we surface the non business value needs earlier in the process. Non functional requirements impact the system as a whole and are cross cutting across business features.
 
+## NFR or Not an NFR
+NFRs are defined by architecture or designers and are implemented by the delivery teams. Policies exist to meet organizational needs.
+
+Teams need to be dilligent about knowing the difference between an NFR that drives system design and organizational policies or guidlines.  NFRs drive changes in system design. Policies tend to change the way people operate or maintain the systems.  You can especially see this where NFRs overlap for certain parts of CI/CD like continuous testing.  
+
+| Function or Capability                                  | NFR | Policy or Goal |
+| ------------------------------------------------------- | --- | -------------- |
+| Automated deployment and smoke test after every build   | ?   | Yes            |
+| Services include health check endpoint to verify status | Yes | ?              |
+| Support fully automated deployments in all environments | ?   | Yes            |
+| Auto restart apps on health check failure               | No  | Yes            |
+| Exercise APIs on regular basis to verify health         | No  | Yes            |
+| Health check dashboard UI                               | No  | Yes            |
+| Distribute SLA goals and metrics on a regular basis     | No  | Yes            |
+| Components require a runbook that describes triage      | No  | Yes            |
+
+
+Software source metrics and other _design time_ metrics feel like a grey area.  They are part of a groups software development policies.  They don't explicitly drive software architecture but can influence it.  We only get unit testable code by writing unit tests and checking coverage.  At the same time, test coverage targets, code complexity targets and other code metrics feel 
+
+| Function or Capability  | NFR | Policy or Goal |
+| ----------------------- | --- | -------------- |
+| Testable code           | Yes | Yes            |
+| 100% unit test coverage | ?   | Yes            |
+
 ------------------
 
 # NFR Definitions
