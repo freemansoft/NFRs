@@ -1,7 +1,7 @@
 # NFRs
-Non Functional Requirements are architecturally significant requrements because they impact the system architecture. They are properties of a system that sit outside of specific business features or functionality. NFRs are sometimes called _constraints_.  Other times they are called _Quality Attributes_. Constraints generally change the shape of an architecture or design.  
+Non Functional Requirements are architecturally significant requirements because they impact the system architecture. They are properties of a system that sit outside of specific business features or functionality. NFRs are sometimes called constraints. Other times they are called Quality Attributes. Constraints generally change the shape of architecture or design.
 
-NFRs are requirements that do not related to business functionality.  They relate to technical attributes like reliability, efficiencey, portability. 
+NFRs are requirements that do not relate to business functionality. They relate to attributes like reliability, efficiency, and portability.
 > [when the non-functional requirements are done well, you may eliminate 50 to 80 percent of product defects.](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
 
 Capturing NFRs early is part of a _shift left_ where we surface the non business value needs earlier in the process. Non functional requirements impact the system as a whole and are cross cutting across business features.
@@ -9,7 +9,7 @@ Capturing NFRs early is part of a _shift left_ where we surface the non business
 ## NFR or Not an NFR
 NFRs are defined by architecture or designers and are implemented by the delivery teams. Policies exist to meet organizational needs.
 
-Teams need to be dilligent about knowing the difference between an NFR that drives system design and organizational policies or guidlines.  NFRs drive changes in system design. Policies tend to change the way people operate or maintain the systems.  You can especially see this where NFRs overlap for certain parts of CI/CD like continuous testing.  
+Teams need to be diligent about knowing the difference between an NFR that drives system design and organizational policies or guidelines. NFRs drive changes in system design. Policies tend to change the way people operate or maintain the systems. You can especially see this where NFRs overlap for certain parts of CI/CD like continuous testing.  
 
 | Function or Capability                                  | NFR | Policy or Goal |
 | ------------------------------------------------------- | --- | -------------- |
@@ -23,7 +23,7 @@ Teams need to be dilligent about knowing the difference between an NFR that driv
 | Components require a runbook that describes triage      | No  | Yes            |
 
 
-Software source metrics and other _design time_ metrics feel like a grey area.  They are part of a groups software development policies.  They don't explicitly drive software architecture but can influence it.  We only get unit testable code by writing unit tests and checking coverage.  At the same time, test coverage targets, code complexity targets and other code metrics feel 
+Software source metrics and other design-time metrics feel like a grey area. They are part of a group's software development policies. They don't explicitly drive software architecture but can influence it. We only get unit-testable code by writing unit tests and checking coverage. At the same time, test coverage targets, code complexity targets, and other code metrics feel like development best practices and not NFRs. 
 
 | Function or Capability  | NFR | Policy or Goal |
 | ----------------------- | --- | -------------- |
@@ -40,7 +40,7 @@ This document describes one way of organizing NFRs for consumption by delivery t
 * [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
 ## Various NFR Taxonomies
-NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. There are many different published NFR taxonomies.  The folloing table links to a few.
+NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. There are many different published NFR taxonomies.  The following table links to a few.
 
 | Site                                                                                                                        | Category Type | Individual Category                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -52,30 +52,30 @@ NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categ
 | [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/)                                  | _Not Grouped_ | Security, reliability, performance, maintainability, scalability, and usability                                             |
 | [A Guide to NFR types and examples](https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/) | _Not Grouped_ | accessibility, accountability, accuracy, adaptability, administrability, affordability, agility, auditability...            |
 
-I couldn't find many Sub-Category examples so sub-cateogries in the sample below are ad-hoc, locally home grown.
+I couldn't find many Sub-Category examples so sub-categories in the sample below are ad-hoc, locally homegrown.
 ## Generic NFR Attributes Template
-Some teams create a set of NFRs in a table. Each row in the table is an individaul NFR.  Each column is an attribute of the NFR.
+Some teams create a set of NFRs in a table. Each row in the table is an individual NFR.  Each column is an attribute of the NFR.
 
 This table has 5 columns.  
 * There is the category/sub-category.
 * The NFR definition and implementation.  
 * A method for validationg that the NFR is implemented
 
-In tabular for we have the following.
+We get something like the following when using a tabular definition format.
 
 | Category                              | Sub-Category                      | Requirement Definition     | Possible Implementation (opt)                         | Validation Method                       |
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
-| Top Level Categories from a Taxonomy. | One or two word requirements name | Description of requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
+| Top-level Categories from a Taxonomy. | One or two word requirements name | Description of requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
 
 ### Example NFR with _Generic Attributes Template_
-The folling is a common NFR on most projects.  It contains the simple 5 column structure.
+The following is a common NFR on most projects. It contains a simple 5 column structure.
 
 | Category        | Sub-Category | Requirement Definition                              | Possible Implementation (opt)                  | Validation Method       |
 | --------------- | ------------ | --------------------------------------------------- | ---------------------------------------------- | ----------------------- |
-| Maintainability | Unit Testing | All code modules must have full unit tests coverage | X Unit for testing and Sonar results converage | Review coverage results |
+| Maintainability | Unit Testing | All code modules must have full unit tests coverage | X Unit for testing and Sonar results coverage | Review coverage results |
 
 ## Scaled Agile Framework Aligned (SAFe) Template
-SAFe adds metrics to an NFR attributes listed above.  SAFe metrics drive or support Key Performance Indicators (PKIs). We use those metrics to determine project success beyond _the app is up_
+SAFe adds metrics to the NFR attributes listed above.  SAFe metrics drive or support Key Performance Indicators (PKIs). We use those metrics to determine project success beyond _the app is up_
 
 SAFe additional attributes are something like:
 *  Name of the KPI.
@@ -94,8 +94,8 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
 ------------------
 
 # Current NFR list
-NFRs have been captured in tab delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
-They are stored in _Tab Separated_ format _.tsv_ which is previewable on github. Open NFRs.tsv with a CSV/TSV viewer. 
+NFRs have been captured in tab-delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
+They are stored in _Tab Separated_ format _.tsv_ which is previewable on GitHub. Open NFRs.tsv with a CSV/TSV viewer. 
 
 You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
 > [NFRs.tsv](NFRs.tsv)
