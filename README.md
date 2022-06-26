@@ -42,10 +42,13 @@ I couldn't find many Sub-Category examples so there ones in the sample below are
 | Maintainability | Unit Testing | All code modules must have full unit tests coverage | X Unit for testing and Sonar results converage | Review coverage results |
 
 ## Scaled Agile Framework Aligned (SAFe) Template
-SAFe adds metrics to an NFR as Key Performance Indicators (PKIs).  Each metric is made up of meters and guages.  We use those metrics to determine project success beyond _the app is up_
-*  The _current_ KPI value or 
-*  The _target_ KPI value
-*  The _failure_ KPI value
+SAFe adds metrics to an NFR attributes listed above.  SAFe metrics drive or support Key Performance Indicators (PKIs). We use those metrics to determine project success beyond _the app is up_
+
+SAFe additional attributes are something like:
+*  Name of the KPI.
+*  The _current_ KPI value 
+*  The _target_ KPI vale
+*  The _failure_ KPI value below which _its pretty bad_
 
 See the SAFe web site for the meanings of these fields. https://www.scaledagileframework.com/nonfunctional-requirements/
 * Labels in *(parenthesis)* are Scaled Agile Framework aligned.
