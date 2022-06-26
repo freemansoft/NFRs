@@ -1,7 +1,7 @@
 # NFRs
 Non Functional Requirements are architecturally significant requrements because they impact the system architecture. They are properties of a system that sit outside of specific business features or functionality. NFRs are sometimes called _constraints_.  Other times they are called _Quality Attributes_. Constraints generally change the shape of an architecture or design.  
 
-NFRs are requirements that do not related to business functionality.  The relate to attributes like reliability, efficiencey, portability. 
+NFRs are requirements that do not related to business functionality.  They relate to technical attributes like reliability, efficiencey, portability. 
 > [when the non-functional requirements are done well, you may eliminate 50 to 80 percent of product defects.](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
 
 Capturing NFRs early is part of a _shift left_ where we surface the non business value needs earlier in the process. Non functional requirements impact the system as a whole and are cross cutting across business features.
