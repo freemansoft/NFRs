@@ -16,7 +16,7 @@ This document describes one way of organizing NFRs for consumption by delivery t
 * [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
 ## Various NFR Category Taxonomies
-NFRs are often grouped with related NFRs into _Categories_.  There are many different published NFR categories and Category Type aggeregationsrs.  The links below show some Categories that are grouped under described Category Types
+NFRs taxonomies often group related NFRs into _Categories_ or _Qualities_. Some of the taxonomies have additional _Sub Categories_. There are many different published NFR categories and sub-categores.  The folloing table links to a few.
 
 | Site                                                                                                                        | Category Type | Individual Category                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -28,14 +28,18 @@ NFRs are often grouped with related NFRs into _Categories_.  There are many diff
 | [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/)                                  | _Not Grouped_ | Security, reliability, performance, maintainability, scalability, and usability                                             |
 | [A Guide to NFR types and examples](https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/) | _Not Grouped_ | accessibility, accountability, accuracy, adaptability, administrability, affordability, agility, auditability...            |
 
-I couldn't find many Sub-Category examples so there ones in the sample below are ad-hoc following no model.
+I couldn't find many Sub-Category examples so sub-cateogries in the sample below are ad-hoc, locally home grown.
 ## Generic NFR Attributes Template
+Some teams create a set of NFRs in a table. Each row in the table is an individaul NFR.  Each column is an attribute of the NFR.
+
+This table has 5 columns.  There is the category/sub-category. The definition and implementation.  The validation method.
 
 | Category                              | Sub-Category                      | Requirement Definition     | Possible Implementation (opt)                         | Validation Method                       |
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
 | Top Level Categories from a Taxonomy. | One or two word requirements name | Description of requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
 
 ### Example NFR with _Generic Attributes Template_
+The folling is a common NFR on most projects.  It contains the simple 5 column structure.
 
 | Category        | Sub-Category | Requirement Definition                              | Possible Implementation (opt)                  | Validation Method       |
 | --------------- | ------------ | --------------------------------------------------- | ---------------------------------------------- | ----------------------- |
