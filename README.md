@@ -1,5 +1,5 @@
 # NFRs
-Non Functional Requirements are architecturally significant requrements because they impact the system architecture. They are properties of a system that sit outside of specific business features or functionality. NFRs are sometimes called _constraints_.  Other times they are called _Quality Attributes_. These constraints do change the shape of an architecture or design.  
+Non Functional Requirements are architecturally significant requrements because they impact the system architecture. They are properties of a system that sit outside of specific business features or functionality. NFRs are sometimes called _constraints_.  Other times they are called _Quality Attributes_. Constraints generally change the shape of an architecture or design.  
 
 NFRs are requirements that do not related to business functionality.  The relate to attributes like reliability, efficiencey, portability. 
 > [when the non-functional requirements are done well, you may eliminate 50 to 80 percent of product defects.](https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-non-functional-requirements-impact-product-development)
@@ -15,7 +15,7 @@ This document describes one way of organizing NFRs for consumption by delivery t
 * [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )
 * [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
-## Various NFR Category Taxonomies
+## Various NFR Taxonomies
 NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. There are many different published NFR taxonomies.  The folloing table links to a few.
 
 | Site                                                                                                                        | Category Type | Individual Category                                                                                                         |
@@ -32,7 +32,12 @@ I couldn't find many Sub-Category examples so sub-cateogries in the sample below
 ## Generic NFR Attributes Template
 Some teams create a set of NFRs in a table. Each row in the table is an individaul NFR.  Each column is an attribute of the NFR.
 
-This table has 5 columns.  There is the category/sub-category. The definition and implementation.  The validation method.
+This table has 5 columns.  
+* There is the category/sub-category.
+* The NFR definition and implementation.  
+* A method for validationg that the NFR is implemented
+
+In tabular for we have the following.
 
 | Category                              | Sub-Category                      | Requirement Definition     | Possible Implementation (opt)                         | Validation Method                       |
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
