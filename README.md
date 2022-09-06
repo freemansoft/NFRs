@@ -119,7 +119,7 @@ The Categories group similar or topical NFRs. They don't tell you when the NFRs 
 
 Backlog items should be defined with the appropriate NFRs. We can categorize components by type and associate various NFRs to each of those component or operational type.  
 
-``` mermaid-js
+```mermaid
 flowchart TD;
 
     subgraph subcategory1a[Safety]
