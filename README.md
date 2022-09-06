@@ -7,6 +7,8 @@ Non Functional Requirements are architecturally significant requirements because
 
 Capturing NFRs early is part of a _shift left_ where we surface the non business value needs earlier in the process. Non functional requirements impact the system as a whole and are cross cutting across business features.
 
+------------------
+
 ## NFR or Not an NFR
 NFRs are defined by architecture or designers and are implemented by the delivery teams. Policies exist to meet organizational needs.
 
@@ -23,6 +25,7 @@ Teams need to be diligent about knowing the difference between an NFR that drive
 | Distribute SLA goals and metrics on a regular basis     | No  | Yes            |
 | Components require a runbook that describes triage      | No  | Yes            |
 
+------------------
 
 Software source metrics and other design-time metrics feel like a grey area. They are part of a group's software development policies. They don't explicitly drive software architecture but can influence it. We only get unit-testable code by writing unit tests and checking coverage. At the same time, test coverage targets, code complexity targets, and other code metrics feel like development best practices and not NFRs. 
 
@@ -36,25 +39,37 @@ Software source metrics and other design-time metrics feel like a grey area. The
 # NFR Definitions
 This document describes one way of organizing NFRs for consumption by delivery teams. This format is designed to present NFRs _at a glance_. Those requiring more details in their NFRs should choose a different format.
 
+------------------
+
 ## References
 * [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )
 * [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/) 
 
-## Various NFR Taxonomies
-NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. There are many different published NFR taxonomies.  The following table links to a few.
+------------------
+
+## NFR Taxonomies and Classifications
+NFR taxonomies often group related NFRs into _Categories_ or _Qualities_. _Categories_ may have _Sub-categories_ to help with organization. 
+
+There are many different published NFR taxonomies.  The following table links to a few.
 
 | Site                                                                                                                        | Category Type | Individual Category                                                                                                         |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )                                                      | Execution     | safety, security and usability                                                                                              |
 | [Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement )                                                      | Evolution     | testability, maintainability, extensibility and scalability                                                                 |
+| | | |
 | [Modern Requirements](https://www.modernrequirements.com/blogs/pillar/what-are-non-functional-requirements/)                | Operational   | Access/Security, Accessability, Availability, Confidentiality, Efficiency, Integrity, Survivability, Reliability, Usability |
 | [Modern Requirements](https://www.modernrequirements.com/blogs/pillar/what-are-non-functional-requirements/)                | Revisional    | Maintainability, Modifiability, Flexibility, Scalability, Verifiability                                                     |
 | [Modern Requirements](https://www.modernrequirements.com/blogs/pillar/what-are-non-functional-requirements/)                | Transitional  | Portability, Reusability, Interopability, Installability                                                                    |
+| | | |
 | [Scaled Agile Framework](https://www.scaledagileframework.com/nonfunctional-requirements/)                                  | _Not Grouped_ | Security, reliability, performance, maintainability, scalability, and usability                                             |
+| | | |
 | [A Guide to NFR types and examples](https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/) | _Not Grouped_ | accessibility, accountability, accuracy, adaptability, administrability, affordability, agility, auditability...            |
 
-I couldn't find many Sub-Category examples so sub-categories in the sample below are ad-hoc, locally homegrown.
-## Generic NFR Attributes Template
+NFR are organized by category and sub-category.
+
+------------------
+
+## Simple NFR Attributes Template
 Some teams create a set of NFRs in a table. Each row in the table is an individual NFR.  Each column is an attribute of the NFR.
 
 This table has 5 columns.  
@@ -68,14 +83,20 @@ We get something like the following when using a tabular definition format.
 | ------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- |
 | Top-level Categories from a Taxonomy. | One or two word requirements name | Description of requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |
 
-### Example NFR with _Generic Attributes Template_
+
+------------------
+
+### Example NFR with _Generic Attributes Template_ - 5 Column short form
 The following is a common NFR on most projects. It contains a simple 5 column structure.
 
 | Category        | Sub-Category | Requirement Definition                              | Possible Implementation (opt)                  | Validation Method       |
 | --------------- | ------------ | --------------------------------------------------- | ---------------------------------------------- | ----------------------- |
-| Maintainability | Unit Testing | All code modules must have full unit tests coverage | X Unit for testing and Sonar results coverage | Review coverage results |
+| Evolution | Testing | Code modules must have full unit tests coverage | X Unit for testing and Sonar results coverage | Review coverage results |
+| Evolution | Testing | Acceptance criteria must be part of functional tests | BDD tests exist for all positive and negative acceptance criteria | Review as part of pull request |
 
-## Scaled Agile Framework Aligned (SAFe) Template
+------------------
+
+## Scaled Agile Framework Aligned (SAFe) Template - 10 column with KPI
 SAFe adds metrics to the NFR attributes listed above.  SAFe metrics drive or support Key Performance Indicators (PKIs). We use those metrics to determine project success beyond _the app is up_
 
 SAFe additional attributes are something like:
@@ -89,9 +110,77 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
 
 | Category                               | _(Sub-Category)_                  | Requirement Definition     | Possible Implementation                               | Validation Method                       |     | _(Meter)_          | Metric Units _(Scale)_ | Metric _(Target)_       | Metric Failure _(Constraint)_ | Metric _(Current)_   |
 | -------------------------------------- | --------------------------------- | -------------------------- | ----------------------------------------------------- | --------------------------------------- | --- | ------------------ | ---------------------- | ----------------------- | ----------------------------- | -------------------- |
-| Top Level Categories from a  Taxonomy. | One or two word requirements name | Describing the requirement | A suggested implementation or organizational standard | How the NFR implementation is validated |     | Metric calculation | metric value type      | Target value for metric | Failure value for metric      | Current metric value |
+| Top Level Categories from a Taxonomy. | One or two word requirements name | Requirement Definition | A suggested implementation or organizational standard | How the NFR implementation is validated |     | Metric calculation | metric value type      | Target value for metric | Failure value for metric      | Current metric value |
 
-  
+------------------
+
+# Identifying NFR Applicability
+The Categories group similar or topical NFRs. They don't tell you when the NFRs apply.  Each deployable, management or operational component is impacted by some subset of the NFRs across several categories.  Web HTTP API endpoints often have similar NFRs.  Databases all have a common set of NFRs.  
+
+Backlog items should be defined with the appropriate NFRs. We can categorize components by type and associate various NFRs to each of those component or operational type.  
+
+``` mermaid-js
+flowchart TD;
+
+    subgraph subcategory1a[Safety]
+        NFR1a1[NFR]
+        NFR1a2[NFR]
+    end
+    subgraph subcategory1b[Security]
+        NFR1b1[NFR]
+        NFR1b2[NFR]
+        NFR1b3[NFR]
+    end
+    subgraph subcategory2a[Testability]
+        NFR2a1[NFR]
+        NFR2a2[NFR]
+        NFR2a3[NFR]
+    end
+    subgraph subcategory2b[Lineage]
+        NFR2b1[NFR]
+        NFR2b2[NFR]
+    end
+
+    subgraph category1[Execution]
+        subcategory1a
+        subcategory1b
+    end
+
+    subgraph category2[Evolution]
+        subcategory2a
+        subcategory2b
+    end
+    
+    subgraph Categories
+        category1
+        category2
+    end
+    
+    subgraph Deployables[Deliverables]
+        DeployableType1[ ]
+        DeployableType1b[ ]
+        DeployableType2[ ]
+        DeployableType2b[ ]
+        DeployableType3[ ]
+    end
+
+    NFR1a1 --> DeployableType1
+    NFR1a2 --> DeployableType2
+
+    NFR1b1 --> DeployableType1
+    NFR1b2 --> DeployableType2
+    NFR1b3 --> DeployableType2
+
+    NFR2a1 --> DeployableType1
+    NFR2a2 --> DeployableType2
+    NFR2a3 --> DeployableType3
+
+    NFR2b1 --> DeployableType1
+    NFR2b2 --> DeployableType3
+```
+
+Ex: All web API endpoints have similar NFRs about metrics, encryption, audit, etc
+
 ------------------
 
 # Current NFR list
