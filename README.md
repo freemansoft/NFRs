@@ -202,8 +202,8 @@ Ex: All web API endpoints have similar NFRs about metrics, encryption, audit, et
 
 ------------------
 
-# Current NFR list
-NFRs have been captured in tab-delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
+# Example List of NFRs
+A sample set of NFRs have been captured in tab-delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
 They are stored in _Tab Separated_ format _.tsv_ which is previewable on GitHub. Open NFRs.tsv with a CSV/TSV viewer. 
 
 You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
