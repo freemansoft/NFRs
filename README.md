@@ -157,26 +157,35 @@ flowchart TD;
     end
     
     subgraph Deployables[Deliverables]
-        DeployableType1[ ]
-        DeployableType1b[ ]
-        DeployableType2[ ]
-        DeployableType2b[ ]
-        DeployableType3[ ]
+        subgraph API
+            DeployableType1a[ ]
+            DeployableType1b[ ]
+            DeployableType1c[ ]
+        end
+        subgraph Persistence
+            DeployableType2a[ ]
+            DeployableType2b[ ]
+            DeployableType2c[ ]
+        end
+        subgraph Dashboard
+            DeployableType3a[ ]
+            DeployableType3b[ ]
+        end
     end
 
-    NFR1a1 --> DeployableType1
-    NFR1a2 --> DeployableType2
+    NFR1a1 --> API
+    NFR1a2 --> Persistence
 
-    NFR1b1 --> DeployableType1
-    NFR1b2 --> DeployableType2
-    NFR1b3 --> DeployableType2
+    NFR1b1 --> API
+    NFR1b2 --> Persistence
+    NFR1b3 --> Persistence
 
-    NFR2a1 --> DeployableType1
-    NFR2a2 --> DeployableType2
-    NFR2a3 --> DeployableType3
+    NFR2a1 --> API
+    NFR2a2 --> Persistence
+    NFR2a3 --> Dashboard
 
-    NFR2b1 --> DeployableType1
-    NFR2b2 --> DeployableType3
+    NFR2b1 --> API
+    NFR2b2 --> Dashboard
 ```
 
 Ex: All web API endpoints have similar NFRs about metrics, encryption, audit, etc
