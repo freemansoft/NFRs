@@ -115,9 +115,19 @@ See the SAFe web site for the meanings of these fields. https://www.scaledagilef
 ------------------
 
 # Identifying NFR Applicability
-The Categories group similar or topical NFRs. They don't tell you when the NFRs apply.  Each deployable, management or operational component is impacted by some subset of the NFRs across several categories.  Web HTTP API endpoints often have similar NFRs.  Databases all have a common set of NFRs.  
+The Categories group similar or topical NFRs. They don't tell you when the NFRs apply.  Each deployable, management or operational component is impacted by some subset of the NFRs across several categories.  Web HTTP API endpoints often have similar NFRs.  Databases all have a common set of NFRs. 
 
-Backlog items should be defined with the appropriate NFRs. We can categorize components by type and associate various NFRs to each of those component or operational type.  
+| Sample Applicability Types |
+| ---- |
+| Web API |
+| Streaming |
+| Serverless |
+| Persistence |
+| Dashboards | 
+| Big Data |
+| Machine Learning |
+
+Backlog items should be defined with the appropriate NFRs. We can categorize components by type and associate various NFRs to each of those component or operational types.  The end result is something like the following 
 
 ```mermaid
 flowchart TD;
