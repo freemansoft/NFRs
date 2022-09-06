@@ -166,20 +166,20 @@ flowchart TD;
         category2
     end
     
-    subgraph Deployables[Deliverables]
-        subgraph API
-            DeployableType1a[ ]
-            DeployableType1b[ ]
-            DeployableType1c[ ]
+    subgraph Deliverables[Types]
+        subgraph API[Type API]
+            DeployableType1a[API A]
+            DeployableType1b[API B]
+            DeployableType1c[API C]
         end
-        subgraph Persistence
-            DeployableType2a[ ]
-            DeployableType2b[ ]
-            DeployableType2c[ ]
+        subgraph Persistence[Type Persistence]
+            DeployableType2a[DB A]
+            DeployableType2b[Blob B]
+            DeployableType2c[Warehouse C]
         end
-        subgraph Dashboard
-            DeployableType3a[ ]
-            DeployableType3b[ ]
+        subgraph Dashboard[Type Dashboard]
+            DeployableType3a[KPI Board]
+            DeployableType3b[Technical Metrics]
         end
     end
 
