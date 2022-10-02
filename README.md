@@ -10,7 +10,8 @@ Capturing NFRs early is part of a _shift left_ where we surface the non business
 ------------------
 
 ## NFR or Not an NFR
-NFRs are defined by architecture or designers and are implemented by the delivery teams. Policies exist to meet organizational needs.
+An NFR is a requirement that does not include design.  The NFR should be applicable across platforms.  NFRs that include design decisions or specific implementations should probably be split into an NFR and an ADR.
+NFRs are defined by architecture or policy and are implemented by the delivery teams. Policy are created by the enterprise to meet organizational needs.
 
 Teams need to be diligent about knowing the difference between an NFR that drives system design and organizational policies or guidelines. NFRs drive changes in system design. Policies tend to change the way people operate or maintain the systems. You can especially see this where NFRs overlap for certain parts of CI/CD like continuous testing.  
 
@@ -206,8 +207,9 @@ Ex: All web API endpoints have similar NFRs about metrics, encryption, audit, et
 A sample set of NFRs have been captured in tab-delimited format [NFRs.tsv](NFRs.tsv)  in the _Generic Template_ format.</br>
 They are stored in _Tab Separated_ format _.tsv_ which is previewable on GitHub. Open NFRs.tsv with a CSV/TSV viewer. 
 
-You can find a sample list of NFRs in the _Generic Template_ format in a TSV file in this repository. 
-> [NFRs.tsv](NFRs.tsv)
+You can find a sample list of NFRs in the _Generic Template_ format in [NFRs.tsv](NFRs.tsv). 
+
+You can find the same sample list as an MD file in the _Generic Template_ format in [NFRs.md](NFRs.md). The md file is generated from the tsv file using the pyhthon script `test-to-md.py`.  As such, the [NFRs.md](NFRs.md) file should **always** have a later mod date than the [NFRs.tsv](NFRs.tsv)
 
 ## Edit TSV with Excel
 This just works
