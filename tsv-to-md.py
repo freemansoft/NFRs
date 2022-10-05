@@ -1,3 +1,8 @@
+__doc__ = """
+This converts a delimited csv file to a markdown table using pandas.
+Run with the -h option to see arguments
+"""
+
 import pandas as pd
 import argparse
 
